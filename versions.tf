@@ -32,12 +32,6 @@ terraform {
       version = ">= 2.0.1"
     }
   }
-  cloud{
-    organization = "k8s-on-eks"
-    workspaces {
-      name = "k8s-on-eks"
-    }
-  }
   
   required_version = ">= 0.14"
 }

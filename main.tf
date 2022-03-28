@@ -17,3 +17,12 @@ resource "null_resource" "example" {
     value = "A example resource that does nothing!"
   }
 }
+
+variable "region" {
+  default     = "ap-south-1"
+  description = "AWS region"
+}
+
+provider "aws" {
+  region = var.region
+}

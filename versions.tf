@@ -26,6 +26,9 @@ terraform {
     }
   }
 
+  workspaces {
+      name = "k8s-on-eks"
+    }
   required_version = ">= 0.14"
 }
 

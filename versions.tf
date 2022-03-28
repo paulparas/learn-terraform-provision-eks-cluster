@@ -1,4 +1,11 @@
 terraform {
+  cloud {
+    organization = "k8s-on-eks"
+
+    workspaces {
+      name = "k8s-on-eks"
+    }
+  }
   required_providers {
     aws = {
       source  = "hashicorp/aws"
